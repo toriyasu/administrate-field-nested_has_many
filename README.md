@@ -1,6 +1,6 @@
 # Administrate::Field::NestedHasMany
 
-A plugin for nested has_many forms in [Administrate].
+A plugin for nested has_many forms in [Administrate], forked for rails 5 support.
 
 ## Usage
 
@@ -21,6 +21,11 @@ Add to your `FooDashboard`:
 ATTRIBUTE_TYPES = [
   bars: Field::NestedHasMany.with_options(skip: :foo),
 ]
+```
+
+Add to your `Foo` model:
+```ruby
+accepts_nested_attributes_for :bars
 ```
 
 The `skip` option takes a single symbol or list of symbols.
