@@ -17,16 +17,16 @@ Run:
 $ bundle install
 ```
 
+Add to your `Foo` model:
+```ruby
+accepts_nested_attributes_for :bars
+```
+
 Add to your `FooDashboard`:
 ```ruby
 ATTRIBUTE_TYPES = [
   bars: Field::NestedHasMany.with_options(skip: :foo),
 ]
-```
-
-Add to your `Foo` model:
-```ruby
-accepts_nested_attributes_for :bars
 ```
 
 The `skip` option takes a single symbol or list of symbols.
