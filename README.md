@@ -17,6 +17,11 @@ Run:
 $ bundle install
 ```
 
+Add to your `application.js`:
+```
+//=require cocoon
+```
+
 Add to your `Foo` model:
 ```ruby
 accepts_nested_attributes_for :bars
