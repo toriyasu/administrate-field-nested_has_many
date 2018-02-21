@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name = "administrate-field-nested_has_many"
-  gem.version = Administrate::Field::NestedHasMany::VERSION
+  gem.version = 1.1.0
   gem.authors = ["Grayson Wright"]
   gem.email = ["wright.grayson@gmail.com"]
   gem.homepage = "https://github.com/graysonwright/administrate-field-nested_has_many"
